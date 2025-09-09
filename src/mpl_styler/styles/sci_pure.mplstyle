@@ -1,0 +1,76 @@
+# Ticks
+xtick.top: True
+ytick.right: True
+xtick.direction: in
+ytick.direction: in
+xtick.minor.visible : True
+ytick.minor.visible : True
+xtick.major.size: 10
+ytick.major.size: 10
+xtick.major.width: 2
+ytick.major.width: 2
+xtick.minor.size: 5
+ytick.minor.size: 5
+xtick.minor.width: 1.2
+ytick.minor.width: 1.2
+
+# Axes
+axes.linewidth : 1.5     # thickness of the frame
+axes.titlepad: 12
+axes.labelpad: 8
+axes.grid: True
+axes.grid.which: both
+
+# Font
+axes.titlesize: 32
+font.size: 27
+font.family : sans-serif
+font.sans-serif : sans-serif, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans,
+
+# Figure size and quality
+figure.dpi: 100
+savefig.dpi: 300
+figure.figsize: 16, 10
+figure.frameon: False
+# figure.autolayout: True
+savefig.bbox: tight
+savefig.pad_inches: 0.1
+
+# Grid
+grid.alpha: 0.3
+grid.color: 0.1
+grid.linestyle: --
+grid.linewidth: 1
+
+# Legend
+legend.frameon: True
+legend.edgecolor: 0.85
+legend.facecolor: 0.85
+legend.numpoints: 1
+legend.scatterpoints: 1
+legend.labelspacing: 0.3
+legend.fontsize: 22
+
+# Lines
+lines.markersize : 6
+lines.linewidth: 2
+lines.solid_capstyle: round
+
+# Errorbars
+errorbar.capsize: 4
+
+# Vivid colors: 
+axes.prop_cycle: (cycler('color', ['E63946', 'FF7F00', '2ECC71', '1F77B4', '8E44AD', '000000']) + cycler('linestyle', ['-', '--', '-.', '-', '--', ':']) + cycler('marker', ['o', 's', 'D', '^', 'x', '*']))
+
+image.cmap: cividis
+
+# font color: very light grey
+text.color: 0
+axes.labelcolor: 0
+xtick.color: 0
+ytick.color: 0
+
+# background: bluish dark grey
+figure.facecolor: "ffffff"
+axes.facecolor: "ffffff"
+savefig.facecolor: "ffffff"
