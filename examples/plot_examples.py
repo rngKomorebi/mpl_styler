@@ -25,7 +25,7 @@ for i in range(7):
 plt.legend(loc="upper right")
 plt.xlabel("X-axis (-)")
 plt.ylabel("Y-axis (-)")
-plt.title("'Sci faded' style")
+plt.title("'sci_faded' style")
 
 # >==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<
 #                           Pure scientific
@@ -43,7 +43,7 @@ for i in range(7):
 plt.legend(loc="upper right")
 plt.xlabel("X-axis (-)")
 plt.ylabel("Y-axis (-)")
-plt.title("'Sci pure' style")
+plt.title("'sci_pure' style")
 
 # >==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<
 #                          Night wave: lines
@@ -61,7 +61,7 @@ for i in range(7):
 plt.legend(loc="upper right")
 plt.xlabel("X-axis (-)")
 plt.ylabel("Y-axis (-)")
-plt.title("'Night wave' style")
+plt.title("'night_wave' style")
 
 # >==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<
 #                     Night wave: lines + neon glow
@@ -79,7 +79,7 @@ for i in range(7):
 plt.legend(loc="upper right")
 plt.xlabel("X-axis (-)")
 plt.ylabel("Y-axis (-)")
-plt.title("'Night wave' style + neon glow")
+plt.title("'night_wave' style + neon glow")
 
 night_wave_func.make_lines_glow()
 
@@ -99,7 +99,7 @@ for i in range(7):
 plt.legend(loc="upper right")
 plt.xlabel("X-axis (-)")
 plt.ylabel("Y-axis (-)")
-plt.title("'Night wave' style + neon glow + gradient")
+plt.title("'night_wave' style + neon glow + gradient")
 
 night_wave_func.add_glow_and_grad_fill()
 
