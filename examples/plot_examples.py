@@ -10,10 +10,10 @@ from matplotlib import pyplot as plt
 from mpl_styler.functions import night_wave_func
 
 # >==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<
-#                           Bleak scientific
+#                           Faded scientific
 # >==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<
 
-plt.style.use("sci_bleak")
+plt.style.use("sci_faded")
 plt.figure()
 
 for i in range(7):
@@ -25,7 +25,7 @@ for i in range(7):
 plt.legend(loc="upper right")
 plt.xlabel("X-axis (-)")
 plt.ylabel("Y-axis (-)")
-plt.title("'Sci bleak' style")
+plt.title("'Sci faded' style")
 
 # >==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<
 #                           Pure scientific

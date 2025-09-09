@@ -1,6 +1,6 @@
 ## MPL Styler
 
-TODO
+
 
 <!-- ![Tests](https://github.com/rngKomorebi/LinoSPAD2/actions/workflows/tests.yml/badge.svg)
 ![Documentation](https://github.com/rngKomorebi/LinoSPAD2/actions/workflows/documentation.yml/badge.svg) -->
@@ -15,7 +15,7 @@ using matplotlib, including one for paper/presentation/poster-ready graphs.
 Currently available styles are:
 
 - 'sci_pure' for clean and paper-ready plots;
-- 'sci_bleak' for kind of a sun-faded look with soft colors;
+- 'sci_faded' for kind of a sun-faded look with soft colors;
 - 'night_wave' for eye-pleasing plots with dark background and neon colors.
 
 The last one is heavily inspired by the 'cyberpunk' style (https://github.com/dhaitz/mplcyberpunk).
@@ -30,16 +30,67 @@ Working on a pypi distro. So for now the path of least resistance would be to do
 pip install -e .
 ```
 
-and you should be good to go.
+and you should be good to go. Now you can import the package besides the rest and the styles will be available right away.
+
+```
+from matplotlib import pyplot as plt
+import mpl_styler
+
+plt.style.use("sci_faded")
+
+plt.plot([i for i in range(30)])
+```
 
 
 ## Examples
 
 Below are shown all the available styles and functions.
 
-<img src="https://github.com/rngKomorebi/" width="500">
+### Clean scientific style: sci_pure
 
-TODO
+Publication-ready plots: clean, vibrant, w/b-ready.
+
+<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/sci_pure.png" width="500">
+
+### Sun-faded scientific style: sci_faded
+
+Sun-faded-paper type of plots.
+
+<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/sci_faded.png" width="500">
+
+### Neon style: night_wave
+
+Neon and synthwave kind of vibe.
+
+<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_style.png" width="500">
+
+This is where the functions come into play and make this style shine. We can make the lines glow.
+
+<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_style%2Bneon.png" width="500">
+
+We can also add a gradient under each line.
+
+<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_style%2Bneon%2Bgrad.png" width="500">
+
+Bar-plot with just this style is childish.
+
+<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_bars.png" width="500">
+
+Add a gradient - now we're talking.
+
+<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_bars%2Bgrad.png" width="500">
+
+Histogram is the same as bar plots: ok-ish.
+
+<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_hist.png" width="500">
+
+Add a gradient and voila.
+
+<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_hist%2Bgrad.png" width="500">
+
+The glow effect can also be added to the scatter plot giving the points a star-like shine.
+
+<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_scatter.png" width="500">
 
 ## Acknowledgment
 
