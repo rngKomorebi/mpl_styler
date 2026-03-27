@@ -25,5 +25,6 @@ def use(style_name: str) -> None:
     plt = kmpl.use("sci_pure")
     plt.plot(...)
     """
+    plt.close("all")
     plt.style.use(["default", style_name])
     return plt
