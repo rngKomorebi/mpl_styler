@@ -24,24 +24,32 @@ There are also a couple of functions for use mostly with the 'night_wave' style 
 
 ## Installation and usage
 
-Working on a pypi distro. So for now the path of least resistance would be to download the repo and install locally; after cd-ing to where the package is located, run:
+Install from PyPI:
 
 ```
-pip install -e .
+pip install komorebi_mpl
 ```
 
-and you should be good to go. Now you can import the package besides the rest and the styles will be available right away.
+Import the package and use `komorebi_mpl.use()` to apply a style — it sets the style and returns `pyplot` ready to use:
 
-```
-from matplotlib import pyplot as plt
-import mpl_styler
+```python
+import komorebi_mpl as kmpl
 
-plt.style.use("sci_faded")
-
+plt = kmpl.use("sci_faded")
 plt.plot([i for i in range(30)])
 ```
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/sci_faded_import_example.png" width="700">
+Alternatively, apply styles directly via matplotlib:
+
+```python
+from matplotlib import pyplot as plt
+import komorebi_mpl  # registers the styles
+
+plt.style.use("sci_faded")
+plt.plot([i for i in range(30)])
+```
+
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/sci_faded_import_example.png" width="700">
 
 ## Examples
 
@@ -51,47 +59,47 @@ Below are shown all the available styles and functions.
 
 Publication-ready plots: clean, vibrant, w/b-ready.
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/sci_pure.png" width="700">
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/sci_pure.png" width="700">
 
 ### Sun-faded scientific style: sci_faded
 
 Sun-faded-paper type of plots.
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/sci_faded.png" width="700">
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/sci_faded.png" width="700">
 
 ### Neon style: night_wave
 
 Neon and synthwave kind of vibe.
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_style.png" width="700">
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/night_wave_style.png" width="700">
 
 This is where the functions come into play and make this style shine. We can make the lines glow.
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_style%2Bneon.png" width="700">
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/night_wave_style%2Bneon.png" width="700">
 
 We can also add a gradient under each line.
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_style%2Bneon%2Bgrad.png" width="700">
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/night_wave_style%2Bneon%2Bgrad.png" width="700">
 
 Bar-plot with just this style is childish.
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_bars.png" width="700">
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/night_wave_bars.png" width="700">
 
 Add a gradient - now we're talking.
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_bars%2Bgrad.png" width="700">
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/night_wave_bars%2Bgrad.png" width="700">
 
 Histogram is the same as bar plots: ok-ish.
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_hist.png" width="700">
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/night_wave_hist.png" width="700">
 
 Add a gradient and voila.
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_hist%2Bgrad.png" width="700">
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/night_wave_hist%2Bgrad.png" width="700">
 
 The glow effect can also be added to the scatter plot giving the points a star-like shine.
 
-<img src="https://github.com/rngKomorebi/mpl_styler/blob/main/examples/figures/night_wave_scatter.png" width="700">
+<img src="https://github.com/rngKomorebi/komorebi_mpl/blob/main/examples/figures/night_wave_scatter.png" width="700">
 
 ## Acknowledgment
 

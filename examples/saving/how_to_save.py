@@ -7,7 +7,7 @@ import os
 import numpy as np
 from matplotlib import pyplot as plt
 
-import mpl_styler
+import komorebi_mpl
 
 plt.style.use("classic_mpl")
 

@@ -12,8 +12,8 @@ import os
 import numpy as np
 from matplotlib import pyplot as plt
 
-import mpl_styler
-from mpl_styler.functions import night_wave_func
+import komorebi_mpl
+from komorebi_mpl.functions import night_wave_func
 
 OUT_DIR = os.path.join(os.path.dirname(__file__), "figures", "showcase")
 os.makedirs(OUT_DIR, exist_ok=True)
@@ -44,7 +44,7 @@ def _save(name: str) -> None:
 
 
 def plot_lines(style: str) -> None:
-    mpl_styler.use(style)
+    komorebi_mpl.use(style)
     fig, ax = plt.subplots()
 
     x = np.linspace(0, 2 * np.pi, 200)
@@ -73,7 +73,7 @@ def plot_lines(style: str) -> None:
 
 
 def plot_scatter(style: str) -> None:
-    mpl_styler.use(style)
+    komorebi_mpl.use(style)
     fig, ax = plt.subplots()
 
     for k in range(4):
@@ -93,7 +93,7 @@ def plot_scatter(style: str) -> None:
 
 
 def plot_bars(style: str) -> None:
-    mpl_styler.use(style)
+    komorebi_mpl.use(style)
     fig, ax = plt.subplots()
 
     categories = ["A", "B", "C", "D", "E"]
@@ -124,7 +124,7 @@ def plot_bars(style: str) -> None:
 
 
 def plot_histogram(style: str) -> None:
-    mpl_styler.use(style)
+    komorebi_mpl.use(style)
     fig, ax = plt.subplots()
 
     for k, label in enumerate(["Sample A", "Sample B", "Sample C"]):
@@ -143,7 +143,7 @@ def plot_histogram(style: str) -> None:
 
 
 def plot_hist2d(style: str) -> None:
-    mpl_styler.use(style)
+    komorebi_mpl.use(style)
     fig, ax = plt.subplots()
 
     x = RNG.normal(0, 1, 2000)
@@ -162,7 +162,7 @@ def plot_hist2d(style: str) -> None:
 
 
 def plot_fill(style: str) -> None:
-    mpl_styler.use(style)
+    komorebi_mpl.use(style)
     fig, ax = plt.subplots()
 
     x = np.linspace(0, 4 * np.pi, 300)
@@ -185,7 +185,7 @@ def plot_fill(style: str) -> None:
 
 
 def plot_multipanel(style: str) -> None:
-    mpl_styler.use(style)
+    komorebi_mpl.use(style)
     fig, (ax1, ax2) = plt.subplots(1, 2)
     fig.suptitle(f"{style} — multi-panel")
 
@@ -212,7 +212,7 @@ def plot_multipanel(style: str) -> None:
 
 
 def plot_shared_axes(style: str) -> None:
-    mpl_styler.use(style)
+    komorebi_mpl.use(style)
     fig, axes = plt.subplots(3, 1, sharex=True)
     fig.suptitle(f"{style} — shared x-axis")
 
@@ -234,7 +234,7 @@ def plot_shared_axes(style: str) -> None:
 
 
 def plot_logscale(style: str) -> None:
-    mpl_styler.use(style)
+    komorebi_mpl.use(style)
     fig, ax = plt.subplots()
 
     x = np.logspace(-1, 3, 200)
@@ -255,7 +255,7 @@ def plot_logscale(style: str) -> None:
 
 
 def plot_annotations(style: str) -> None:
-    mpl_styler.use(style)
+    komorebi_mpl.use(style)
     fig, ax = plt.subplots()
 
     x = np.linspace(0, 2 * np.pi, 200)
@@ -298,7 +298,7 @@ def plot_annotations(style: str) -> None:
 
 
 def plot_night_wave_line_glow() -> None:
-    mpl_styler.use("night_wave")
+    komorebi_mpl.use("night_wave")
     fig, ax = plt.subplots()
 
     x = np.linspace(0, 2 * np.pi, 200)
@@ -316,7 +316,7 @@ def plot_night_wave_line_glow() -> None:
 
 
 def plot_night_wave_glow_gradient() -> None:
-    mpl_styler.use("night_wave")
+    komorebi_mpl.use("night_wave")
     fig, ax = plt.subplots()
 
     x = np.linspace(0, 2 * np.pi, 200)
@@ -334,7 +334,7 @@ def plot_night_wave_glow_gradient() -> None:
 
 
 def plot_night_wave_bars() -> None:
-    mpl_styler.use("night_wave")
+    komorebi_mpl.use("night_wave")
     fig, ax = plt.subplots()
 
     categories = ["A", "B", "C", "D", "E"]
@@ -350,7 +350,7 @@ def plot_night_wave_bars() -> None:
 
 
 def plot_night_wave_hist_gradient() -> None:
-    mpl_styler.use("night_wave")
+    komorebi_mpl.use("night_wave")
     fig, ax = plt.subplots()
 
     data = RNG.normal(0, 1, 1000)
@@ -365,7 +365,7 @@ def plot_night_wave_hist_gradient() -> None:
 
 
 def plot_night_wave_scatter_glow() -> None:
-    mpl_styler.use("night_wave")
+    komorebi_mpl.use("night_wave")
     fig, ax = plt.subplots()
 
     x = RNG.normal(0, 1, 150)

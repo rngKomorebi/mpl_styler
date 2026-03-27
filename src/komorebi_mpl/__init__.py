@@ -21,8 +21,8 @@ def use(style_name: str) -> None:
 
     Example
     -------
-    import mpl_styler as mst
-    plt = mst.use("sci_pure")
+    import komorebi_mpl as kmpl
+    plt = kmpl.use("sci_pure")
     plt.plot(...)
     """
     plt.style.use(["default", style_name])

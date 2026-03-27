@@ -7,7 +7,7 @@ only with the 'night_wave' style.
 import numpy as np
 from matplotlib import pyplot as plt
 
-from mpl_styler.functions import night_wave_func
+from komorebi_mpl.functions import night_wave_func
 
 # >==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<==>==<
 #                           Faded scientific
