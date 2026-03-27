@@ -16,6 +16,8 @@ Currently available styles are:
 
 - 'sci_pure' for clean and paper-ready plots;
 - 'sci_faded' for kind of a sun-faded look with soft colors;
+- 'sci_pub' for a personal publication style with a colorblind-safe palette;
+- 'komorebi' for a warm forest-light aesthetic inspired by the Japanese word 木漏れ日;
 - 'night_wave' for eye-pleasing plots with dark background and neon colors.
 
 The last one is heavily inspired by the 'cyberpunk' style (https://github.com/dhaitz/mplcyberpunk).

@@ -1,0 +1,88 @@
+# sci_pub — personal publication style.
+# White background, colorblind-safe palette anchored on rebeccapurple + darkorange.
+# Color order draws from Okabe-Ito for safe distinguishability across
+# protanopia, deuteranopia, and tritanopia.
+# Linestyle cycling provides a second differentiation axis (B&W-safe).
+
+# Ticks
+xtick.top: True
+ytick.right: True
+xtick.direction: in
+ytick.direction: in
+xtick.minor.visible: True
+ytick.minor.visible: True
+xtick.major.size: 10
+ytick.major.size: 10
+xtick.major.width: 2
+ytick.major.width: 2
+xtick.minor.size: 5
+ytick.minor.size: 5
+xtick.minor.width: 1.2
+ytick.minor.width: 1.2
+
+# Axes
+axes.edgecolor: "black"
+axes.linewidth: 1.5
+axes.titlepad: 12
+axes.labelpad: 8
+axes.grid: True
+axes.grid.which: both
+
+# Font
+axes.titlesize: 32
+font.size: 30
+font.family: sans-serif
+font.sans-serif: sans-serif, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans,
+
+# Figure size and quality
+figure.figsize: 16, 10
+figure.frameon: False
+
+# Grid
+grid.alpha: 0.25
+grid.color: 0.75
+grid.linestyle: --
+grid.linewidth: 0.8
+
+# Legend
+legend.frameon: True
+legend.edgecolor: 0.85
+legend.facecolor: 0.95
+legend.numpoints: 1
+legend.scatterpoints: 1
+legend.labelspacing: 0.3
+legend.fontsize: 22
+
+# Lines
+lines.markersize: 7
+lines.linewidth: 2.5
+lines.solid_capstyle: round
+
+# Errorbars
+errorbar.capsize: 4
+
+# Colorblind-safe palette:
+#   663399  rebeccapurple   — primary
+#   FF8C00  darkorange      — secondary
+#   0072B2  Okabe-Ito blue  — safe across all CVD types
+#   009E73  Okabe-Ito bluish green
+#   D55E00  Okabe-Ito vermillion (visually distinct from darkorange)
+#   CC79A7  Okabe-Ito reddish purple (visually distinct from rebeccapurple)
+axes.prop_cycle: (cycler('color', ['663399', 'FF8C00', '0072B2', '009E73', 'D55E00', 'CC79A7']) + cycler('linestyle', ['-', '-', '--', '--', '-.', '-.']) + cycler('marker', ['o', 's', 'D', '^', 'x', 'v']))
+
+image.cmap: viridis
+
+# Black text and axes
+text.color: 0
+axes.labelcolor: 0
+xtick.color: 0
+ytick.color: 0
+
+# White background
+figure.facecolor: "#ffffff"
+axes.facecolor: "#ffffff"
+savefig.facecolor: "#ffffff"
+
+# Text boxes
+patch.facecolor: "#F0ECF8"
+patch.edgecolor: "#663399"

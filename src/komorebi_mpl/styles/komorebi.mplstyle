@@ -1,0 +1,91 @@
+# komorebi — 木漏れ日
+# The Japanese word for sunlight filtering through leaves:
+# the dappled interplay of warm light, shadow, and moving foliage.
+#
+# Palette evokes a forest canopy scene:
+#   C8860A  deep gold       — warm sunlight shafts
+#   2D6A4F  forest green    — deep foliage
+#   4A86B8  sky blue        — glimpses of sky through the canopy
+#   A0522D  sienna          — bark and earth in warm afternoon light
+#   6BAA25  leaf green      — bright new leaves catching the light
+#   8B7BC8  soft lavender   — cool shadow light, dusk komorebi
+#
+# Background: warm parchment #FAF8F0 — like sunlight on a pale surface
+# filtered through leaves.
+
+# Ticks
+xtick.top: True
+ytick.right: True
+xtick.direction: in
+ytick.direction: in
+xtick.minor.visible: True
+ytick.minor.visible: True
+xtick.major.size: 10
+ytick.major.size: 10
+xtick.major.width: 2
+ytick.major.width: 2
+xtick.minor.size: 5
+ytick.minor.size: 5
+xtick.minor.width: 1.2
+ytick.minor.width: 1.2
+
+# Axes
+axes.edgecolor: "#5A5040"
+axes.linewidth: 1.5
+axes.titlepad: 12
+axes.labelpad: 8
+axes.grid: True
+axes.grid.which: both
+
+# Font
+axes.titlesize: 32
+font.size: 30
+font.family: sans-serif
+font.sans-serif: sans-serif, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans,
+
+# Figure size and quality
+figure.figsize: 16, 10
+figure.frameon: False
+
+# Grid — warm, soft, like dappled shadow
+grid.alpha: 0.35
+grid.color: "#C8B898"
+grid.linestyle: --
+grid.linewidth: 0.8
+
+# Legend
+legend.frameon: True
+legend.edgecolor: "#C8B898"
+legend.facecolor: "#F5F0E4"
+legend.numpoints: 1
+legend.scatterpoints: 1
+legend.labelspacing: 0.3
+legend.fontsize: 22
+
+# Lines
+lines.markersize: 7
+lines.linewidth: 2.5
+lines.solid_capstyle: round
+
+# Errorbars
+errorbar.capsize: 4
+
+# Forest canopy palette (see header for rationale)
+axes.prop_cycle: cycler('color', ['C8860A', '2D6A4F', '4A86B8', 'A0522D', '6BAA25', '8B7BC8'])
+
+image.cmap: YlGn
+
+# Warm dark charcoal text — softer than pure black, like ink on parchment
+text.color: "#2C2416"
+axes.labelcolor: "#2C2416"
+xtick.color: "#2C2416"
+ytick.color: "#2C2416"
+
+# Warm parchment background
+figure.facecolor: "#FAF8F0"
+axes.facecolor: "#FAF8F0"
+savefig.facecolor: "#FAF8F0"
+
+# Text boxes
+patch.facecolor: "#EDE8D8"
+patch.edgecolor: "#C8860A"

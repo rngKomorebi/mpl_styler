@@ -21,14 +21,16 @@ os.makedirs(OUT_DIR, exist_ok=True)
 RNG = np.random.default_rng(42)
 
 STYLES = [
+    "night_wave",
     "sci_pure",
     "sci_faded",
-    "night_wave",
     "sci_print",
+    "sci_pub",
     "blueprint",
     "minimal",
     "solarized",
     "earth",
+    "komorebi",
 ]
 
 
