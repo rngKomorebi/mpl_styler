@@ -113,7 +113,7 @@ def add_gradient_fill(
         alpha_gradientglow = (0.0, alpha_gradientglow)
     if not (
         type(alpha_gradientglow) == tuple
-        and type(alpha_gradientglow[0]) == type(alpha_gradientglow[0]) == float
+        and type(alpha_gradientglow[0]) == type(alpha_gradientglow[1]) == float
     ):
         raise ValueError(
             "alpha_gradientglow must be a float or a tuple of two "
@@ -241,7 +241,7 @@ def make_scatter_glow(
         alpha is divided among the glow layers.
     """
 
-    if not ax:
+    if ax is None:
         ax = plt.gca()
 
     scatterpoints = ax.collections[-1]
@@ -252,7 +252,7 @@ def make_scatter_glow(
     alpha = alpha / n_glow_lines
 
     for i in range(1, n_glow_lines):
-        plt.scatter(
+        ax.scatter(
             x, y, s=dot_size * (diff_dotwidth**i), c=dot_color, alpha=alpha
         )
 
@@ -397,7 +397,7 @@ def fancy_plot(func, *args, **kwargs):
         gradient effects applied.
     """
 
-    plt.style.use(r"D:\mpl_style\night_wave.mplstyle.yaml")
+    plt.style.use("night_wave")
 
     fig = func(*args, show_fig=False, **kwargs)  # call original function
     ax = fig.get_axes()[0]

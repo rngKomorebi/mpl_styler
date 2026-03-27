@@ -1,0 +1,79 @@
+# blueprint — deep navy background with white/ice-blue lines,
+# evoking technical engineering drawings and CAD blueprints.
+
+# Ticks
+xtick.top: True
+ytick.right: True
+xtick.direction: in
+ytick.direction: in
+xtick.minor.visible: True
+ytick.minor.visible: True
+xtick.major.size: 10
+ytick.major.size: 10
+xtick.major.width: 2
+ytick.major.width: 2
+xtick.minor.size: 5
+ytick.minor.size: 5
+xtick.minor.width: 1.2
+ytick.minor.width: 1.2
+
+# Axes
+axes.edgecolor: "#3A6186"
+axes.linewidth: 1.5
+axes.titlepad: 12
+axes.labelpad: 8
+axes.grid: True
+axes.grid.which: both
+
+# Font
+axes.titlesize: 32
+font.size: 30
+font.family: sans-serif
+font.sans-serif: sans-serif, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans,
+
+# Figure size and quality
+figure.figsize: 16, 10
+figure.frameon: False
+
+# Grid — subtle, slightly lighter than the background
+grid.alpha: 0.35
+grid.color: "#3A6186"
+grid.linestyle: -
+grid.linewidth: 0.8
+
+# Legend
+legend.frameon: True
+legend.edgecolor: "#3A6186"
+legend.facecolor: "#0D1F3C"
+legend.numpoints: 1
+legend.scatterpoints: 1
+legend.labelspacing: 0.3
+legend.fontsize: 22
+
+# Lines
+lines.markersize: 6
+lines.linewidth: 2
+lines.solid_capstyle: round
+
+# Errorbars
+errorbar.capsize: 4
+
+# Ice-blue to white palette — all legible on deep navy
+axes.prop_cycle: cycler('color', ['F0F4F8', '7EC8E3', 'A3D9FF', '4FA3C5', 'C8E6F5', '60B0D4'])
+
+image.cmap: Blues
+
+# Light text on dark background
+text.color: "#E8F1FA"
+axes.labelcolor: "#E8F1FA"
+xtick.color: "#B8D4EA"
+ytick.color: "#B8D4EA"
+
+# Deep navy background
+figure.facecolor: "#0D1F3C"
+axes.facecolor: "#0D1F3C"
+savefig.facecolor: "#0D1F3C"
+
+# Text boxes
+patch.facecolor: "#142848"
+patch.edgecolor: "#3A6186"

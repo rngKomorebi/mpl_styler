@@ -1,0 +1,80 @@
+# solarized — light variant of Ethan Schoonover's Solarized palette.
+# Warm off-white background, carefully harmonized accent hues.
+# Familiar to developers, easy on the eyes.
+
+# Ticks
+xtick.top: True
+ytick.right: True
+xtick.direction: in
+ytick.direction: in
+xtick.minor.visible: True
+ytick.minor.visible: True
+xtick.major.size: 10
+ytick.major.size: 10
+xtick.major.width: 2
+ytick.major.width: 2
+xtick.minor.size: 5
+ytick.minor.size: 5
+xtick.minor.width: 1.2
+ytick.minor.width: 1.2
+
+# Axes
+axes.edgecolor: "#93A1A1"
+axes.linewidth: 1.5
+axes.titlepad: 12
+axes.labelpad: 8
+axes.grid: True
+axes.grid.which: both
+
+# Font
+axes.titlesize: 32
+font.size: 30
+font.family: sans-serif
+font.sans-serif: sans-serif, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans,
+
+# Figure size and quality
+figure.figsize: 16, 10
+figure.frameon: False
+
+# Grid — very subtle warm grey
+grid.alpha: 0.4
+grid.color: "#D3CCB8"
+grid.linestyle: --
+grid.linewidth: 0.8
+
+# Legend
+legend.frameon: True
+legend.edgecolor: "#93A1A1"
+legend.facecolor: "#EEE8D5"
+legend.numpoints: 1
+legend.scatterpoints: 1
+legend.labelspacing: 0.3
+legend.fontsize: 22
+
+# Lines
+lines.markersize: 6
+lines.linewidth: 2
+lines.solid_capstyle: round
+
+# Errorbars
+errorbar.capsize: 4
+
+# Solarized accent colors (official palette by Ethan Schoonover)
+axes.prop_cycle: cycler('color', ['268BD2', 'DC322F', '859900', 'D33682', '2AA198', 'CB4B16', '6C71C4', 'B58900'])
+
+image.cmap: YlOrRd
+
+# Solarized base00 (#657B83) for text — dark on light
+text.color: "#657B83"
+axes.labelcolor: "#657B83"
+xtick.color: "#839496"
+ytick.color: "#839496"
+
+# Solarized base3 / base2 backgrounds
+figure.facecolor: "#FDF6E3"
+axes.facecolor: "#EEE8D5"
+savefig.facecolor: "#FDF6E3"
+
+# Text boxes
+patch.facecolor: "#E8E2CF"
+patch.edgecolor: "#93A1A1"

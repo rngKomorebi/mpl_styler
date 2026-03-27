@@ -1,0 +1,74 @@
+# minimal — Tufte-inspired: data-forward, no visual clutter.
+# No grid, outward ticks, only bottom+left axis lines visible,
+# generous whitespace, lighter frame.
+
+# Ticks — outward, bottom+left only, no minor ticks
+xtick.top: False
+ytick.right: False
+xtick.direction: out
+ytick.direction: out
+xtick.minor.visible: False
+ytick.minor.visible: False
+xtick.major.size: 8
+ytick.major.size: 8
+xtick.major.width: 1.2
+ytick.major.width: 1.2
+
+# Axes — lighter frame, only bottom+left visible via edgecolor;
+# top/right spines will be removed by the style's intent (users can enforce
+# via ax.spines[['top','right']].set_visible(False) for full Tufte look)
+axes.edgecolor: 0.3
+axes.linewidth: 1.2
+axes.titlepad: 16
+axes.labelpad: 10
+axes.grid: False
+axes.spines.top: False
+axes.spines.right: False
+
+# Font
+axes.titlesize: 30
+font.size: 28
+font.family: sans-serif
+font.sans-serif: sans-serif, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans,
+
+# Figure size and quality
+figure.figsize: 16, 10
+figure.frameon: False
+
+# Grid — disabled
+grid.alpha: 0.0
+
+# Legend — frameless to reduce ink
+legend.frameon: False
+legend.numpoints: 1
+legend.scatterpoints: 1
+legend.labelspacing: 0.4
+legend.fontsize: 22
+
+# Lines — slightly thinner, no caps clutter
+lines.markersize: 5
+lines.linewidth: 1.8
+lines.solid_capstyle: butt
+
+# Errorbars
+errorbar.capsize: 0
+
+# Muted, accessible palette
+axes.prop_cycle: cycler('color', ['2166AC', 'D6604D', '4DAC26', 'F4A11D', '762A83', '1B7837'])
+
+image.cmap: viridis
+
+# Near-black text
+text.color: "#1A1A1A"
+axes.labelcolor: "#1A1A1A"
+xtick.color: "#333333"
+ytick.color: "#333333"
+
+# Clean white background
+figure.facecolor: "#ffffff"
+axes.facecolor: "#ffffff"
+savefig.facecolor: "#ffffff"
+
+# Text boxes — very light, minimal border
+patch.facecolor: "#F5F5F5"
+patch.edgecolor: "#CCCCCC"

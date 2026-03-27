@@ -23,18 +23,17 @@ axes.grid.which: both
 
 # Font
 axes.titlesize: 32
-font.size: 27
+font.size: 30
 font.family : sans-serif
 font.sans-serif : sans-serif, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans,
 
 # Figure size and quality
-figure.dpi: 100
-savefig.dpi: 300
+# figure.dpi: 100
+# savefig.dpi: 300
 figure.figsize: 16, 10
 figure.frameon: False
 # figure.autolayout: True
-savefig.bbox: tight
-savefig.pad_inches: 0.1
+# savefig.bbox: tight
 
 # Grid
 grid.alpha: 0.3
@@ -59,17 +58,21 @@ lines.solid_capstyle: round
 # Errorbars
 errorbar.capsize: 4
 
-# neon colors: 
+# Line colors: 
 axes.prop_cycle: cycler('color', ['3B5BA9', 'C44536', '4C9F70', 'E5A823', '7B3E8C', 'D17C36'])
 image.cmap: cividis
 
 # font color: very light grey
-text.color: 0
-axes.labelcolor: 0
-xtick.color: 0
-ytick.color: 0
+text.color: black
+axes.labelcolor: black
+xtick.color: black
+ytick.color: black
 
 # background: bluish dark grey
 figure.facecolor: "#f1ebde"
 axes.facecolor: "#f1ebde"
 savefig.facecolor: "#f1ebde"
+
+# Text boxes
+patch.facecolor: "#D2CAC1"
+patch.edgecolor: "black"

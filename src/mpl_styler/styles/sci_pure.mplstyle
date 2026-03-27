@@ -23,18 +23,17 @@ axes.grid.which: both
 
 # Font
 axes.titlesize: 32
-font.size: 27
+font.size: 30
 font.family : sans-serif
 font.sans-serif : sans-serif, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans,
 
 # Figure size and quality
-figure.dpi: 100
-savefig.dpi: 300
+# figure.dpi: 100
+# savefig.dpi: 300
 figure.figsize: 16, 10
 figure.frameon: False
 # figure.autolayout: True
-savefig.bbox: tight
-savefig.pad_inches: 0.1
+# savefig.bbox: tight
 
 # Grid
 grid.alpha: 0.3
@@ -60,7 +59,7 @@ lines.solid_capstyle: round
 errorbar.capsize: 4
 
 # Vivid colors: 
-axes.prop_cycle: (cycler('color', ['E63946', 'FF7F00', '2ECC71', '1F77B4', '8E44AD', '000000']) + cycler('linestyle', ['-', '--', '-.', '-', '--', ':']) + cycler('marker', ['o', 's', 'D', '^', 'x', '*']))
+axes.prop_cycle: (cycler('color', ['E63946', 'FF7F00', '2ECC71', '1F77B4', '8E44AD', '000000']) + cycler('linestyle', ['-', '--', '-.', '-', '--', ':']) + cycler('marker', ['.', 'o', 's', 'D', '^', 'x']))
 
 image.cmap: cividis
 
@@ -74,3 +73,7 @@ ytick.color: 0
 figure.facecolor: "ffffff"
 axes.facecolor: "ffffff"
 savefig.facecolor: "ffffff"
+
+# Text boxes
+patch.facecolor: "#E1E1E1"
+patch.edgecolor: "black"

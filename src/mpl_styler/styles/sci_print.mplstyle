@@ -1,0 +1,81 @@
+# sci_print — black-and-white only, for greyscale journal figures.
+# All series distinguished by linestyle + marker, so figures survive
+# greyscale printing without any colour information.
+
+# Ticks
+xtick.top: True
+ytick.right: True
+xtick.direction: in
+ytick.direction: in
+xtick.minor.visible: True
+ytick.minor.visible: True
+xtick.major.size: 10
+ytick.major.size: 10
+xtick.major.width: 2
+ytick.major.width: 2
+xtick.minor.size: 5
+ytick.minor.size: 5
+xtick.minor.width: 1.2
+ytick.minor.width: 1.2
+
+# Axes
+axes.edgecolor: "black"
+axes.linewidth: 1.5
+axes.titlepad: 12
+axes.labelpad: 8
+axes.grid: True
+axes.grid.which: both
+
+# Font
+axes.titlesize: 32
+font.size: 30
+font.family: sans-serif
+font.sans-serif: sans-serif, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans,
+
+# Figure size and quality
+figure.figsize: 16, 10
+figure.frameon: False
+
+# Grid
+grid.alpha: 0.25
+grid.color: 0.15
+grid.linestyle: :
+grid.linewidth: 0.8
+
+# Legend
+legend.frameon: True
+legend.edgecolor: 0.6
+legend.facecolor: 1.0
+legend.numpoints: 1
+legend.scatterpoints: 1
+legend.labelspacing: 0.3
+legend.fontsize: 22
+
+# Lines
+lines.markersize: 7
+lines.linewidth: 2
+lines.solid_capstyle: round
+
+# Errorbars
+errorbar.capsize: 4
+
+# Greyscale color + distinct linestyle + marker cycle.
+# Every series is uniquely identifiable by linestyle alone OR marker alone.
+axes.prop_cycle: (cycler('color', ['000000', '000000', '000000', '000000', '000000', '000000']) + cycler('linestyle', ['-', '--', '-', '-.', '--', ':']) + cycler('marker', ['o', 's', 'D', '^', 'x', 'v']))
+
+image.cmap: Greys
+
+# Black text
+text.color: 0
+axes.labelcolor: 0
+xtick.color: 0
+ytick.color: 0
+
+# White background
+figure.facecolor: "#ffffff"
+axes.facecolor: "#ffffff"
+savefig.facecolor: "#ffffff"
+
+# Text boxes
+patch.facecolor: "#E8E8E8"
+patch.edgecolor: "black"

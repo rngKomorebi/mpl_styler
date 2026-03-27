@@ -24,18 +24,17 @@ axes.grid.which: both
 
 # Font
 axes.titlesize: 32
-font.size: 27
+font.size: 30
 font.family : sans-serif
 font.sans-serif : sans-serif, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans,
 
 # Figure size and quality
-figure.dpi: 100
-savefig.dpi: 300
+# figure.dpi: 100
+# savefig.dpi: 300
 figure.figsize: 16, 10
 figure.frameon: False
 # figure.autolayout: True
-savefig.bbox: tight
-savefig.pad_inches: 0.1
+# savefig.bbox: tight
 
 # Grid
 grid.alpha: 0.3
@@ -74,3 +73,7 @@ ytick.color: 0.95
 figure.facecolor: "#221D2F"
 axes.facecolor: "#221D2F"
 savefig.facecolor: "#221D2F"
+
+# Text boxes
+patch.facecolor: "#382C47"
+patch.edgecolor: "black"

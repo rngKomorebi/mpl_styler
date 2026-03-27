@@ -128,6 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Generated example figures
+examples/figures/showcase/
+
 # .dat data files
 # *.dat
 *.ini
